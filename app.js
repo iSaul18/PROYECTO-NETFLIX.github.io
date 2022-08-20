@@ -109,6 +109,7 @@ const ocultarPassword = (e) => {
 
 // SUBMIT FUNTIONS
 const createAcountSubmit = (e) => {
+  e.preventDefault();
   submitCreateAcount.style.display = "block";
 };
 
