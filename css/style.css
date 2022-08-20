@@ -47,7 +47,7 @@ body {
     ),
     url("../img/fondo.jpg");
   background-size: cover;
-  height: 125vh;
+  height: 118vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -341,7 +341,11 @@ body {
   }
 
   body {
-    height: 128vh;
+    height: 118vh;
+  }
+
+  .main {
+    margin-top: 8rem;
   }
 
   .footer-container {
@@ -351,7 +355,7 @@ body {
 /* MEDIA QUERY 1000px */
 @media (max-width: 62.5em) {
   body {
-    height: 120vh;
+    height: 125vh;
   }
 
   .footer-container {
@@ -375,7 +379,7 @@ body {
   }
 
   .main {
-    margin-top: 15rem;
+    margin-top: 22rem;
   }
 
   .footer-container {
@@ -385,11 +389,22 @@ body {
   .footer-links {
     grid-template-columns: 1fr;
   }
+  .footer-language {
+    margin-left: 5.2rem;
+  }
 }
 
 /* MEDIA QUERY 389px */
 @media (max-width: 23.75em) {
   body {
     height: 140vh;
+  }
+
+  .main {
+    margin-top: 12rem;
+  }
+
+  .footer-language {
+    margin-left: 5.2rem;
   }
 }
