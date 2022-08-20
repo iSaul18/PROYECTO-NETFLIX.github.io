@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FAVICONS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="description" content="proyecto-netflix" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- FIN FAVICONS -->
+    <title>Netflix</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img class="logo" src="img/logo.webp" alt="Netflix-Logo" />
+    </header>
+
+    <main class="main">
+      <div class="main-container">
+        <h1 class="main-title">Inicia sesión</h1>
+
+        <form class="form">
+          <div class="inputs-container">
+            <input
+              id="btn-email"
+              class="btn btn--input"
+              type="text"
+              autocomplete="off"
+            />
+            <p class="input-error input-email-error">
+              Ingresa un email o un número de teléfono válido.
+            </p>
+            <label class="btn-placeholder btn-placeholder-email" for="btn-email"
+              >Email o número de telefono</label
+            >
+
+            <input
+              id="btn-password"
+              class="btn btn--input"
+              type="password"
+              autocomplete="off"
+            />
+            <p class="input-error input-password-error">
+              La contraseña debe tener entre 4 a 60 caracteres
+            </p>
+            <label
+              class="btn-placeholder btn-placeholder-password"
+              for="btn-password"
+              >Contraseña</label
+            >
+            <p class="input-visualy">MOSTRAR</p>
+            <p class="input-desvisualy">OCULTAR</p>
+          </div>
+
+          <button class="btn btn--submit" type="submit">Iniciar Sesión</button>
+        </form>
+
+        <div class="main-checkbox">
+          <div class="main-checkbox-p">
+            <img
+              class="footer-language-img"
+              src="icons/check.svg"
+              alt="checkbox"
+            /><span>Recuérdame</span>
+          </div>
+          <p class="main-checkbox-p"><a href="#!">¿Necesitas ayuda?</a></p>
+        </div>
+        <p class="main-sub-title">
+          ¿Primera vez en Netflix?<a href="#!">Suscríbete ahora.</a>
+        </p>
+        <p class="main-text">
+          Esta página está protegida por Google reCAPTCHA para comprobar que no
+          eres robot. <a href="#!">Más info.</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-paragraph">
+          ¿Preguntas? Llama al <a href="tel:0-800-52352">0-800-52352</a>
+        </p>
+        <nav class="footer-nav">
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#!">Preguntas Frecuentes</a></li>
+            <li><a class="footer-link" href="#!">Centro de ayuda</a></li>
+            <li><a class="footer-link" href="#!">Terminos de uso</a></li>
+            <li><a class="footer-link" href="#!">Privacidad</a></li>
+            <li>
+              <a class="footer-link" href="#!">Preferencias de cookies</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#!">Informacion corporativa</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="footer-language">
+          <img
+            class="footer-language-img"
+            src="icons/word.svg"
+            alt="icon-word"
+          /><span class="footer-language-span">Español</span>
+          <img
+            class="footer-language-img"
+            src="icons/down.svg"
+            alt="icon-arrow-down"
+          />
+        </button>
+      </div>
+    </footer>
+
+    <script defer src="app.js"></script>
+  </body>
+</html>
