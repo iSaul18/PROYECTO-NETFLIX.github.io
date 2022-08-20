@@ -339,6 +339,11 @@ body {
   html {
     font-size: 55%;
   }
+
+  body {
+    height: 130vh;
+  }
+
   .footer-container {
     height: 30rem;
   }
