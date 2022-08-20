@@ -47,7 +47,7 @@ body {
     ),
     url("../img/fondo.jpg");
   background-size: cover;
-  height: 117vh;
+  height: 125vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -341,7 +341,7 @@ body {
   }
 
   body {
-    height: 130vh;
+    height: 128vh;
   }
 
   .footer-container {
