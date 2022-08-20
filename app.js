@@ -4,15 +4,16 @@ const selectorQuery = (identificador) => {
   return document.querySelector(identificador);
 };
 
+const formulario = selectorQuery(".form");
 const emailInput = selectorQuery("#btn-email");
 const passwordInput = selectorQuery("#btn-password");
-const submitInput = selectorQuery(".btn--submit");
 const emailLabel = selectorQuery(".btn-placeholder-email");
 const passwordLabel = selectorQuery(".btn-placeholder-password");
 const emailError = selectorQuery(".input-email-error");
 const passwordError = selectorQuery(".input-password-error");
 const passwordMostrar = selectorQuery(".input-visualy");
 const passwordOcultar = selectorQuery(".input-desvisualy");
+const submitCreateAcount = selectorQuery(".create-acount");
 
 const stylesStar = (e) => {
   return e.style;
@@ -56,6 +57,7 @@ const blurEmail = (e) => {
   if (inputLongitud > 5) {
     emailInput.style.borderBottom = "";
     emailError.style.display = "none";
+    emailInput.style.marginBottom = "0";
   }
 };
 
@@ -81,24 +83,33 @@ const blurPassword = (e) => {
 const inputEmail = (e) => {
   let inputLongitud = emailInput.value.length;
 
-  if (inputLongitud >= 1) {
+  if (inputLongitud <= 3 && inputLongitud >= 1) {
     emailError.textContent = "Escribe un email válido.";
-  } else {
+  }
+  if (inputLongitud === 0) {
     emailError.textContent = "Ingresa un email o un número de teléfono válido.";
+  }
+  if (inputLongitud > 3) {
+    emailError.style.display = "none";
   }
 };
 
 // CLICK FUNCTIONS
-const mostrarPassword = () => {
+const mostrarPassword = (e) => {
   passwordInput.type = "text";
   passwordOcultar.style.display = "block";
   passwordMostrar.style.display = "none";
 };
 
-const ocultarPassword = () => {
+const ocultarPassword = (e) => {
   passwordInput.type = "password";
   passwordMostrar.style.display = "block";
   passwordOcultar.style.display = "none";
+};
+
+// SUBMIT FUNTIONS
+const createAcountSubmit = (e) => {
+  submitCreateAcount.style.display = "block";
 };
 
 emailInput.addEventListener("focus", focusEmail);
@@ -109,3 +120,5 @@ passwordInput.addEventListener("focus", focusPassword);
 passwordInput.addEventListener("blur", blurPassword);
 passwordMostrar.addEventListener("click", mostrarPassword);
 passwordOcultar.addEventListener("click", ocultarPassword);
+
+formulario.addEventListener("submit", createAcountSubmit);
