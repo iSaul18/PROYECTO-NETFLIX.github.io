@@ -10,7 +10,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 55.5%;
+  font-size: 62.5%;
 }
 
 *,
@@ -341,11 +341,11 @@ body {
   }
 
   body {
-    height: 118vh;
+    height: 120vh;
   }
 
   .main {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 
   .footer-container {
