@@ -136,6 +136,32 @@ body {
   color: #fff;
 }
 
+.input-email-contry {
+  display: none;
+  cursor: pointer;
+  height: 1.2rem;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 0.8rem;
+  position: absolute;
+  top: 1.8rem;
+  right: 1rem;
+  transition: all 0.3s;
+}
+
+.input-email-contry img {
+  max-height: 100%;
+}
+
+.input-email-contry img:last-child {
+  filter: invert(50%) sepia(0%);
+}
+
+.input-email-contry span {
+  margin-top: 0.3rem;
+  color: #8c8c8c;
+}
+
 .input-error {
   font-size: 1.3rem;
   color: var(--orange-dark);
@@ -150,7 +176,7 @@ body {
 
 .input-password-error {
   display: none;
-  bottom: -3rem;
+  bottom: -3.6rem;
   left: 0.5rem;
 }
 
@@ -280,7 +306,7 @@ body {
 
 .footer-paragraph {
   margin-left: 3rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -299,7 +325,7 @@ body {
 
 .footer-link {
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: inherit;
   padding-bottom: 0;
 }
